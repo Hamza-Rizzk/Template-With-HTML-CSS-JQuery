@@ -1,0 +1,341 @@
+
+* , *::after , *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato',
+    sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+/* Start Home */
+
+.home {
+    width: 100%;
+    height: 721px;
+    background-image: url("../images/63.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.home .navBar ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.home .navBar ul li {
+    display: inline-block;
+    width: 10%;
+    height: 100px;
+    line-height: 100px;
+}
+
+.home .navBar ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+.home .navBar ul li:hover a {
+    border: 3px solid #FFF;
+    border-radius: 20px;
+}
+
+.home .slider {
+    width: 50%;
+    margin: 20% auto;
+    text-align: center;
+}
+
+.home .slider h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #444;
+}
+
+.home .slider p {
+    font-size: 20px;
+    color: #FFF;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 5px #444;
+}
+
+.home .social {
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
+    text-align: center;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    width: 2.5%;
+}
+
+.home .social i {
+    color: #FFF;
+    display: block;
+    padding: 30px 0;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.home .social i:hover {
+    color: rgb(228, 205, 3);
+    transform: rotate(25deg);
+}
+
+.home .scroll-navBar{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: none; 
+}
+
+.home .scroll-navBar ul li a {
+    color: #FFF;
+    border: 0;
+    border-radius: none;
+}
+
+.home .scroll-button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+}
+
+.home .scroll-button i {
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+/* End Home */
+
+/* Start About */
+.about {
+    width: 100%;
+    height: 720px;
+    background-image: url("../images/65.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .overlay {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 6%;
+    top: 0;
+}
+
+.about .about-us,
+.services .services-us {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.about .about-us h2,
+.services .services-us h2 {
+    font-size: 30px;
+    color: rgb(228, 205, 3);
+    padding: 15% 0 20px 0;
+}
+
+.about .about-us p,
+.services .services-us p {
+    padding: 0 30px;
+    color: #CCC;
+    line-height: 2.5;
+    text-align: left;
+}
+
+.about .about-us p.one,
+.services .services-us p.one {
+    margin-top: 40px;
+}
+
+
+/* End About */
+
+/* Start Our Services */
+.services {
+    width: 100%;
+    height: 720px;
+    background-image: url("../images/64.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .overlay {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 6%;
+    top: 0;
+}
+
+/* End Our Services */
+
+/* Start Testimonials */
+.testimonials {
+    width: 100%;
+    height: 720px;
+    background-image: url("../images/66.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.testimonials .header {
+    padding: 5% 0 3% 0;
+}
+
+.testimonials .header h2 {
+    font-size: 40px;
+    color: #333
+}
+
+.testimonials .sections {
+    width: 100%;
+}
+
+.testimonials .sections .partitions {
+    background-color: rgba(0,0,0,0.5);
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    padding: 25px;
+    line-height: 2;
+}
+
+.testimonials .sections .partitions i {
+    font-size: 60px;
+    padding-bottom: 25px;
+    color: #FFF;
+}
+
+.testimonials .sections .partitions p {
+    font-size: 15px;
+    color: #DDD;
+    text-align: left;
+}
+
+/* End Testimonials */
+
+/* Start Contact Us */
+.contact-us {
+    width: 100%;
+    height: 720px;
+    background-image: url("../images/106.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.contact-us .overlay {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 6%;
+    top: 0;
+}
+
+.contact-us .overlay .header h2 {
+    padding: 10%;
+    font-size: 50px;
+    color: #FFF;
+    text-align: left;
+}
+
+.contact-us .overlay .form form {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-us .overlay .form form input ,
+.contact-us .overlay .form form textarea {
+    display: block;
+    padding: 15px 10px;
+    width: 60%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    background: none;
+    outline: 0;
+    border: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;;
+    color:#FFF;
+}
+
+.contact-us .overlay .form form input::placeholder,
+.contact-us .overlay .form form textarea::placeholder {
+    color: #FFF;
+    font-size: 15px;
+}
+
+.contact-us .overlay .form form input[type="submit"] {
+    color: #FFF;
+    width: 25%;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 20px 15px;
+}
+
+
+/* End Contact Us */
+
+/* Start Footer */
+.contact-us .footer {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+}
+
+/* End Footer */
+
